@@ -41,6 +41,7 @@ pipeline {
 				sh "mvn failsafe:integration-test failsafe:verify"
 			}
 		}
+	}
 	post {
 		always {
 			echo 'Im awesome. I run always'
@@ -52,5 +53,4 @@ pipeline {
 			echo 'I run when you fail'
 		}
 	}
-}
 }
